@@ -104,7 +104,7 @@ public class Progam
         process.StartInfo.UseShellExecute = false;
         process.Start();
         String output = process.StandardOutput.ReadToEnd();
-        nbProcesses = Convert.ToInt16(output) - 1;
+        nbProcesses = Convert.ToInt32(output) - 1;
         process.Close();
 
         /*
